@@ -1,0 +1,731 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: hsla(0, 0%, 0.3%);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+:root { 
+    --headerFont: "aviano-serif", serif;
+    --bodyFont: "nobel", sans-serif;
+    --robotoFont: "Roboto", sans-serif; 
+    --openSans: "Open Sans", sans-serif; 
+    --monsalGothic: "monsal-gothic", sans-serif;
+
+    --lust: "lust", serif;
+}
+
+
+ul {
+    text-decoration: none;
+  
+}
+li , a.menuLink {
+    padding: 1rem 0 0 0;
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+h2 {
+    color: #fff
+}
+
+header {
+    color: #fff
+}
+.navigator header {
+    margin-left: 8%;
+}
+.navigator { 
+    height: 10vh;
+    font-family: var(--headerFont);
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 1rem;
+    padding: 1rem 0 0 1.5rem; ;
+    display: grid;
+    align-items: center;    
+    grid-template-columns: 3fr [start] auto 3fr;
+
+}
+
+.menuicon { 
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 3.2rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    visibility: visible;
+    
+    
+}
+/* STYLING ROTATION ON MENUCION */
+img#XICON,#MENUICON { 
+    transition: transform 1s ease-in-out;
+
+
+}
+/* STYLING ROTATION ON MENUCION */
+.xIcon { 
+    position: fixed;
+    z-index: 1;
+    top: 1rem;
+    right: 3.2rem;
+    width: 1rem;
+    height: 1rem;
+    visibility: hidden;
+    cursor: pointer;
+   
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 150vh; 
+    width: 100%;
+    background: hsla(0, 0%, 0.3%);
+    transform: translateX(-100%);
+    transition: transform .5s ;
+    list-style: none;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+
+
+#sub {
+    font-size: 68px;
+    top: 60%;
+    transition: margin-top 1s;
+    height: 10vh; 
+
+}
+
+.menuLink {
+    margin: 0;
+}
+
+.dropLinks {
+    display: flex;
+    font-size: 30px !important;
+    margin-left: 5%;
+    }
+a #net {
+    font-size: 30px;
+}
+
+
+/* !!!!!!!!! LANDING PAGE LOG !!!!!!!!!!!!! */
+
+
+section.Landing-Page { 
+    height: 100vh;
+    display: flex;
+   flex: 1  auto
+}
+.landingImage { 
+    grid-column:  1;
+    grid-row: 3;
+    z-index: -1;
+    justify-self: center;
+    margin-right: 50px;
+    object-fit:contain;
+}
+
+
+.Landing-Page h1 {
+    color : #fff;
+    font-weight: 700;
+    font-style: normal;
+    font-family: var(--lust);
+    
+}
+
+
+
+.blackBill1 { 
+    font-size: 36px;
+    position: relative;
+    flex-grow: 2;
+    margin-left: 10%;
+   
+}
+
+ .billionsList--li{
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;    
+    transform: translateY(200px);
+}
+
+.li_firstWord { 
+   color: hsl(0,0,100%);
+    font-size: 78px;
+    width: 700px;
+    cursor:default; 
+}
+
+.li_secondWord {
+    color: #ffff;
+    font-size: 78px;
+    width: 600px;
+    cursor:default; 
+
+    
+
+}
+  ._listings { 
+    padding-top: 50px;
+    font-size: 26px;
+    color: hsla(0, 0%, 56%);
+    cursor:default; 
+
+}
+
+
+
+
+.Landing-Page h3 {
+    color: hsla(0, 0%, 60%);
+    font-weight: 100;
+    font-size: 18px;
+    font-family: var(--openSans);
+    grid-column:  start/end;
+    grid-row: 8;
+    justify-self: center;
+
+}
+h3#seconDary { 
+    grid-row: 9;
+    margin-top: 0px;
+}
+
+
+h1#h1-Under { 
+    grid-row: auto !important;
+    margin: 0;
+    align-self: flex-start;
+    padding-top: 6rem;
+    font-size: 28px !important;
+
+}
+h2 { 
+font-family: var(--lust);
+font-weight: 100;
+width: 25rem;
+justify-self: center;
+font-size: 32px;
+
+
+}
+
+#searchBar:hover {
+    cursor: pointer;
+
+}
+
+
+
+.searchWrapper {
+    
+    grid-column: 2;
+    color: #fff;
+    border-radius: 5px;
+    text-align: left;
+    grid-row: 4;
+    height: 50px;
+    width: 25rem;
+    margin-top: 20%;
+    justify-self: center;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+.search-box { 
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    padding-left: 50px;
+
+}
+
+.searchImage  {
+    height: 40px;
+    position: absolute;
+    transform: translate(-10px,-10px);
+}
+.btn-search { 
+    color: #ffff;
+    width: 80px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    pointer-events: painted;
+
+}
+
+.btn-search:focus ~ .input_search {
+    width: 400px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    
+}
+
+.input_search:focus { 
+    width: 400px;
+    border-radius: 0px;
+    transition: all 500ms cubic-bezier(0,0.110,0.35,2);
+}
+
+
+
+
+
+
+.input_search { 
+    height: 45px;
+    width: 0;
+    border-radius: 50%;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background: hsla(0, 0%, 0.3%);
+    border: 3px solid rgba(255, 255, 255) ;
+    padding-right: 40px;
+    color: #fff;
+    font-family: var(--monsalGothic);
+    font-weight: 500;
+
+
+}
+.input_search::placeholder { 
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--monsalGothic);
+
+}
+.match_List { 
+    padding: 50px 0 0 0;
+    transition: all .5s ease-in;
+    height: 100px;
+    width: 450px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: var(--robotoFont);
+    font-weight: 100;
+}#match_p { 
+    margin: 4.5px 0 0 0 ;
+    cursor: pointer;
+}
+
+
+
+
+
+.btn p {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.btn p:after {
+    content: "";
+    border-radius: 5px;
+    height: 50px;
+    width: 4.5rem;
+    background: #fff;
+    display: inline;
+    position: absolute;
+    transform: translateY(-11.1px);
+    margin-left: 15.7rem;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* MEDIA QUERY ON LANDING PAGE  */
+@media only screen and (max-height: 1165px) {
+    section.Landing-Page { 
+        grid-template-rows: 0.5in 0.5in [start] 4in 4in [end];
+    }
+
+    .blackBill1 { 
+        transform: translate(75px, -150px);
+    }
+}
+
+@media screen and ( max-width: 425px){
+    
+    section.Landing-Page { 
+        height: max-content;
+        width: max-content;
+       flex-direction: column-reverse;
+    }
+
+
+    .landingImage {
+        margin-bottom: 150px;
+        transform: translate(140px, -100px);
+       
+    }
+
+    .blackBill1 { 
+        align-self: center;
+        margin: 0;
+    }
+
+    .billionsList {
+        padding: 0; 
+    }
+
+    .li_firstWord, .li_secondWord, ._listings {
+        text-align: center;
+    }
+    .li_secondWord {
+        width: 700px;
+    }
+
+    .search-box  { 
+        justify-self: center;
+        margin-top: 15%;
+    }
+}
+
+
+
+/* MEDIA QUERY ON LANDING PAGE  */
+
+
+
+/* !!!!!!!!! LANDING PAGE LOG !!!!!!!!!!!!! */
+
+/* CAROUSEL JAVASCRIPT */
+
+.carousel {
+    position: relative;
+    height: 100vh;
+
+}
+
+.carousel_track-container {
+    padding: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel_track { 
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height:  100%;
+    transition: transform 1000ms;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.image_slide {
+    border: 4px solid #fff;
+    cursor: pointer;
+}
+
+.carousel-button { 
+    position: absolute;
+    top: 50%;
+    cursor: pointer; 
+    z-index: 101;
+
+}
+
+.carousel_button--left {
+    transform: translate(-150px, 50px);
+   text-decoration: none;
+   background: transparent;
+   border: none;
+   color: #fff; 
+}
+.arrowLeft { 
+    display: inline-block;
+    border: solid #ffff;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    transform: rotate(135deg);
+}
+
+
+
+
+
+.carousel_button--right { 
+    transform: translate(150px, 50px);
+    text-decoration: none;
+   background: transparent;
+   border: none;
+   color: #fff; 
+}
+.arrowRight { 
+    display: inline-block;
+    border: solid #ffff;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+
+@media screen and  (max-width:425px ) { 
+    .menu  { 
+        height: inherit;
+    }
+
+    .carousel_button--left  {
+        transform: translateY(350px);
+    }
+
+    .carousel_button--right { 
+        transform: translate(150px, 350px);
+
+    }
+}
+
+.caruosel-indicator { 
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 12px;
+}
+
+.caruosel-indicator.current-slide { 
+    background: #333;
+}
+
+
+ #hardKnockLife {
+    z-index: -1;
+    object-fit: cover;
+    
+}
+ #kayneWestImage {
+    z-index: 100;
+    object-fit: cover;
+
+}
+
+/* CAROUSEL JAVASCRIPT */
+
+
+/* WORDS OVER CAROUSEL HOVER  */
+#kayne_west::after {
+    content: "Kayne West";
+    display: inline-block;
+    position: absolute;
+    left:40%;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: all 900ms ease;
+
+}
+
+#kayne_west:hover:after { 
+    left: 10%;
+
+}
+#JayZ_words::after { 
+    content: "Jay - Z";
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+
+#JayZ_words:hover::after { 
+    left: 600px;
+}
+#Alex_words::after { 
+    content: "Alexandar Karp";
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+
+#Alex_words:hover::after { 
+    left: 600px;
+}
+#isabel_words::after { 
+    content: "Isabel Dos Santos";
+    display: inline-block;
+    position: absolute;
+    left: 70px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+
+    z-index: -1;
+    transition: left 900ms ease;
+}
+
+#isabel_words:hover::after { 
+    left: 800px;
+}
+#oprah_words::after { 
+    content: "Oprah Winfrey";
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+
+#oprah_words:hover::after { 
+    left: 800px;
+}
+
+
+#folo_words::after { 
+    content: "Folorunsho A..";
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+
+#folo_words:hover::after { 
+
+    left: 800px;
+}
+
+#jordan_words::after { 
+    content: "Michael Jordan";
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+
+#jordan_words:hover:after  { 
+    left: 800px;
+
+}
+
+#david_words:after { 
+    content: "David Steward";
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+
+#david_words:hover:after { 
+    left: 800px
+}
+
+#strive_words::after {
+    content: "Strive Masiyiwa";
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+#strive_words:hover::after { 
+    left: 800px;
+}
+
+#tope_words::after { 
+    content: "Tope Awotona";
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    font-size: 76px;
+    font-family: var(--monsalGothic);
+    color: #fff;
+    white-space: nowrap;
+    z-index: -1;
+    transition: left 900ms ease;
+}
+#tope_words:hover:after {
+    left: 800px;
+}
+
+/* WORDS OVER CAROUSEL HOVER  */
+
+
